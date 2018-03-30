@@ -94,6 +94,7 @@
 						me.prev();
 					}
 				})
+				document.addEventListener('touchmove', function(e){e.preventDefault()}, false);
 			},
 			_pageScroll: function(init){
 				var me = this,
