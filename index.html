@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>pageSwitch插件</title>
+	<link rel="stylesheet" type="text/css" href="css/swiper-4.2.0.min.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	
+	<div id="container">
+		<div class="nodes">
+			<div class="node" id="first">
+				<div>
+					<h3>welcome to PageSwitch plugin demo!</h3>
+				</div>
+			</div>
+			<div class="node" id="second">
+				<div>
+					<h3>first class to learn write plugin!</h3>
+					<img src="images/1.png" alt="">
+				</div>
+			</div>
+			<div class="node" id="third">
+				<div>
+					<h3>second class to learn write plugin!</h3>
+					<img src="images/example.png" alt="">
+				</div>
+			</div>
+			<div class="node" id="fouth">
+				<div>
+					<h3>the end of plugin!</h3>
+					<img src="images/example2.png" alt="">
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<script src="js/zepto.js"></script>
+	<script src="js/touch.js"></script>
+	<script src="js/data.js"></script>
+	<script src="js/fx.js"></script>
+	<script src="js/event.js"></script>
+	<script src="js/pageSwitch.js"></script>
+	<script>
+
+		$('#container').pageSwitch({
+			selectors :{
+				nodes: ".nodes" ,				//所有子页面的容器的class
+				node : ".node" ,				//每子页面的class
+				pagination:".pagination-box",	//分页按钮的容器的class
+				active: ".active",				//分页按钮选中状态
+			},
+			index: 1,							//默认显示第几个子页
+			pagination: true,					//是否生成分页按钮 true：是   false：否
+			loop: true,							//是否循环滑动 true：是   false：否
+			keyboard:true,						//是否支持键盘（上、左上滑，下、右下滑）true：是   false：否
+			direction: "vertical",				//"vertical":竖向排列，"horizontal"：横向排列
+			duration: 500,						//页面滑动动画时长
+			ease: 'ease',						//页面滑动动画效果
+			callback: ''						//动画完成后的回调函数
+		});
+	</script>
+
+</body>
+</html>
