@@ -22,3 +22,4 @@ $('#container').pageSwitch({
 其中，#container是包含所有滑动子页面的元素id；
 
 ## 微信扫码运行
+![image](https://github.com/chinafelix/Mobile-full-screen-sliding/blob/master/qrcode)
