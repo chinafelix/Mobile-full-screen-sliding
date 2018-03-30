@@ -21,5 +21,6 @@ $('#container').pageSwitch({
 ```
 其中，#container是配置项里的selectors.nodes的父级元素的元素id；
 
-## 微信扫码运行
+## 扫码运行
+    微信、浏览器等扫码皆可。
 ![image](https://github.com/chinafelix/Mobile-full-screen-sliding/blob/master/qrcode)
