@@ -90,7 +90,7 @@
 				})
 				me.nodes.on('swipeDown swipeLeft',function(e){
 					if(!me.settings.loop && me.index || me.settings.loop){
-						me.next();
+						me.prev();
 					}
 				})
 			},
