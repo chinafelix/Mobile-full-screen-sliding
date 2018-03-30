@@ -19,7 +19,7 @@ $('#container').pageSwitch({
 			callback: ''						//动画完成后的回调函数
 });
 ```
-其中，#container是包含所有滑动子页面的元素id；
+其中，#container是配置项里的selectors.nodes的父级元素的元素id；
 
 ## 微信扫码运行
 ![image](https://github.com/chinafelix/Mobile-full-screen-sliding/blob/master/qrcode)
