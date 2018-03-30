@@ -89,6 +89,7 @@
 					}
 				})
 				me.nodes.on('swipeDown swipeLeft',function(e){
+					e.preventDefault();
 					if(!me.settings.loop && me.index || me.settings.loop){
 						me.prev();
 					}
